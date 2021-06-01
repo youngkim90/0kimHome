@@ -96,7 +96,7 @@ function MovieComment(props) {
                         <textarea className="text_comment" placeholder="별점과 댓글을 입력해주세요"/>
                     </div>
                     <div className="comment_Submit">
-                        <button onClick={updateReview}> 제 출 </button>
+                        <button onClick={updateReview}>제출</button>
                     </div>
                 </div>
             </div>

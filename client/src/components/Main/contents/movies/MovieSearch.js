@@ -9,7 +9,11 @@ function MovieSearch(props) {
 
     const searchEnter = (event) => {
         if(event.which === 13){
-            props.search(event.target.value);
+            if(event.target.value === ""){
+                props.search("*");
+            } else {
+                props.search(event.target.value);
+            }
         }
     }
 

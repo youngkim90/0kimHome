@@ -14,7 +14,7 @@ router.get('/api/projects/movielist/:title', (req, res)=>{
             res.json(result);
         });
     } else {
-        const query = db.query('select * from movie where title=?', [req.params.title], (err, result) => {
+        const query = db.query('select * from movie where title like ?', ["%"+req.params.title+"%"], (err, result) => {
             if (err) throw err;
             res.json(result);
         });
