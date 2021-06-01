@@ -29,6 +29,17 @@ module.exports = {                                      // moduel export (옛날
                 'css-loader',
                 'sass-loader',
             ],
+        },
+        {
+            test: /\.svg$/i,
+            use: [
+                {
+                    loader: 'url-loader',
+                    options: {
+                        encoding: 'utf8',
+                    },
+                },
+            ],
         }]
     },
     plugins: [
