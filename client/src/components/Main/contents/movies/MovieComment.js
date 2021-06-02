@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Axios from "axios";
 import { withRouter } from 'react-router-dom';
+import {USER_SERVER} from '../../../../config'
 import CommentView from './CommentView'
 
 function MovieComment(props) {
@@ -52,7 +53,7 @@ function MovieComment(props) {
         }
         if (confirm("감사합니다. 리뷰 점수 잊지 않으셨죠? 소중한 리뷰가 전달됩니다.")) {
             const res = Axios({
-                    url:'http://localhost:5000/api/projects/moviereview',
+                    url:USER_SERVER+'api/projects/moviereview',
                     method: 'post',
                     data: {
                         id: props.movieId,

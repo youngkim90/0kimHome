@@ -1,43 +1,41 @@
 import React, {useEffect, useState} from 'react';
 import Axios from 'axios';
+import {request} from '../../../../lib/utils';
 import MovieInfo from './MovieInfo';
+import { USER_SERVER } from '../../../../config';
 import MovieSearch from "./MovieSearch";
 
 function Movielist(props) {
-
-    let list = "";
-    let movieData;
     const [movie, setMovie] = useState([]);
     useEffect(() =>{
 
-        const res = Axios.get('http://localhost:5000/api/projects/movielist/*')
-            .then(response => {
-
-                if(response.data){
-                    const data = Object.assign(response.data);
-                    let movieArr = [];
-                    for(const movieInfo of data){
-                        const movieData = {};
-                        movieData.id = movieInfo.id;
-                        movieData.title = movieInfo.title;
-                        if(movieInfo.thumbnail){
-                            movieData.thumbnail = movieInfo.thumbnail;
-                        }
-                        if(movieInfo.totalScore && movieInfo.reviewer){
-                            const aver = (Number(movieInfo.totalScore)/Number(movieInfo.reviewer)).toFixed(1);
-                            movieData.average = aver;
-                        }
-                        movieArr.push(movieData);
+        const res = request(USER_SERVER+'api/projects/movielist/*', 'get').then(response => {
+            if(response.data){
+                const data = Object.assign(response.data);
+                let movieArr = [];
+                for(const movieInfo of data){
+                    const movieData = {};
+                    movieData.id = movieInfo.id;
+                    movieData.title = movieInfo.title;
+                    if(movieInfo.thumbnail){
+                        movieData.thumbnail = movieInfo.thumbnail;
                     }
-                    setMovie(movieArr);
+                    if(movieInfo.totalScore && movieInfo.reviewer){
+                        const aver = (Number(movieInfo.totalScore)/Number(movieInfo.reviewer)).toFixed(1);
+                        movieData.average = aver;
+                    }
+                    movieArr.push(movieData);
                 }
-            }). catch(err => {
-                throw err;
-            })
+                setMovie(movieArr);
+            } else if (res.error){
+                throw res.error;
+            }
+        })
+
     },[]);
 
     const searchMovie = (value) =>{
-        const res = Axios.get('http://localhost:5000/api/projects/movielist/'+value)
+        const res = Axios.get(USER_SERVER+'api/projects/movielist/'+value)
             .then(response => {
                 if(response.data) {
                     const data = Object.assign(response.data);

@@ -1,5 +1,6 @@
 import React, {useEffect}  from 'react';
 import SkillDetail from './contents/SkillDetail';
+import { IMAGE_BASE_URL } from '../../config';
 import { withRouter } from 'react-router-dom';
 
 function MainDetail(props) {
@@ -47,7 +48,7 @@ function MainDetail(props) {
                 </div>
 
                 <div className="home_img">
-                    <img src="src/components/images/main/myFace.png" alt="" />
+                    <img src={IMAGE_BASE_URL+"main/myFace.png"} alt="" />
                 </div>
             </section>
 

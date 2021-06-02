@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Axios from "axios";
+import { IMAGE_BASE_URL, USER_SERVER } from '../../../../config';
 import MovieComment from "./MovieComment";
 import { withRouter } from 'react-router-dom';
 
@@ -11,7 +12,7 @@ function MovieDetail(props) {
     let reviewScore = 0;
     if(title){
         useEffect( ()=>{
-            const res = Axios.get('http://localhost:5000/api/projects/movielist/'+title)
+            const res = Axios.get(USER_SERVER+'api/projects/movielist/'+title)
                 .then(response => {
                     if (response) {
                         let data = Object.assign(response.data[0]);
@@ -38,7 +39,7 @@ function MovieDetail(props) {
             <div className="MovieDetail">
                 <div className="detail_Container">
                     <div className="detail_Poster">
-                        { MovieDetail && <img className="movie_Poster" src={"../../src/components/images/movies/thumbnail/"+MovieDetail.thumbnail} />}
+                        { MovieDetail && <img className="movie_Poster" src={IMAGE_BASE_URL+"movies/thumbnail/"+MovieDetail.thumbnail} />}
                     </div>
                     <div className="movie_Detail">
                         <div className="detail_Title">
