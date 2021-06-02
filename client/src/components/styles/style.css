@@ -588,7 +588,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin: 5%;
-    width: 60vw;
+    width: 70vw;
 }
 .MovieInfo {
     display: flex;
@@ -958,6 +958,10 @@ main {
     .MovieInfo {
         width:80%;
     }
+    .Movielist {
+        width: 75vw;
+        margin: 3%;
+    }
 }
 @media screen and (max-width: 768px) {
     .home_img {
@@ -966,10 +970,6 @@ main {
     }
     .contact_form textarea{
         resize: none;
-    }
-    .Movielist {
-        width: 75vw;
-        margin: 3%;
     }
     .MovieInfo {
         width:100%;
