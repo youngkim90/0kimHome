@@ -979,7 +979,7 @@ main {
 		width: 70%;
 	}
     .movie_Thumb {
-        width: 20vh;
+        width: 30%;
     }
     .comment_View{
         font-size: 15px;
@@ -999,5 +999,10 @@ main {
     }
     .userInfo {
         width: 25%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .movie_Thumb {
+        width: 40%;
     }
 }
