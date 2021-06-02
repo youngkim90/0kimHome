@@ -76,10 +76,10 @@ function MainDetail(props) {
                         <h2 className="skills_subtitle">기술스택</h2>
                         <p className="skills_text">2년이라는 짧은 시간동안 프로젝트 및 개인공부를 통해서 몇 가지의 기술스택 실력을 쌓을 수 있었습니다.</p>
 
-                        <SkillDetail name="fab fa-html5" title="HTML5" skill="skills_html" per="65%"/>
+                        <SkillDetail name="fab fa-html5" title="HTML5" skill="skills_html" per="60%"/>
                         <SkillDetail name="fab fa-css3" title="CSS3" skill="skills_css" per="60%"/>
                         <SkillDetail name="fab fa-js-square" title="JAVASCRIPT" skill="skills_js" per="70%"/>
-                        <SkillDetail name="fab fa-react" title="REACT" skill="skills_ra" per="50%"/>
+                        <SkillDetail name="fab fa-react" title="REACT" skill="skills_ra" per="60%"/>
                         <SkillDetail name="fab fa-java" title="JAVA" skill="skills_jv" per="75%"/>
                         <SkillDetail name="fas fa-seedling" title="SPRING" skill="skills_sp" per="50%"/>
                         <SkillDetail name="fab fa-node-js" title="NodeJS" skill="skills_nd" per="50%"/>
@@ -87,9 +87,9 @@ function MainDetail(props) {
                     </div>
 
                     <div>
-                        <div className="work_img" onClick={()=>{alert('작업 중입니다.')}} />
-                        </div>
+                        <i className="fas fa-laptop-code skills_img"></i>
                     </div>
+                </div>
             </section>
 
             {/* Project */}
