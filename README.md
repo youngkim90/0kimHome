@@ -19,6 +19,6 @@
 ## 특징
 |특징|이미지|설명|
 |--|--|--|
-|CSS|<img src="https://user-images.githubusercontent.com/47030781/120441140-3d53bd00-c3bf-11eb-9105-612b8c6f106d.png") width="300">|반응형 웹사이트|
+|CSS|<img src="https://user-images.githubusercontent.com/47030781/120441140-3d53bd00-c3bf-11eb-9105-612b8c6f106d.png" width="300">|반응형 웹사이트|
 
 
