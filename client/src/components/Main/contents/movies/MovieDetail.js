@@ -10,7 +10,6 @@ function MovieDetail(props) {
     const [score, setScore] = useState(0);
     const path = props.location.pathname;
     const title = path.substring(path.lastIndexOf("/")+1, path.length);
-    let reviewScore = 0;
     if(title){
         useEffect( ()=>{
             const res = Axios.get(USER_SERVER+'api/projects/movielist/'+title)
@@ -40,7 +39,7 @@ function MovieDetail(props) {
             <div className="MovieDetail">
                 <div className="detail_Container">
                     <div className="detail_Poster">
-                        { MovieDetail && <img className="movie_Poster" src={IMAGE_BASE_URL+"images/movies/thumbnail/"+MovieDetail.thumbnail} />}
+                        { MovieDetail && <img className="movie_Poster" src={IMAGE_BASE_URL+"movies/thumbnail/"+MovieDetail.thumbnail} />}
                     </div>
                     <div className="movie_Detail">
                         <div className="detail_Title">
