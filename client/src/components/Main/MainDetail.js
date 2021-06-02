@@ -103,7 +103,7 @@ function MainDetail(props) {
                     <div className="work_img">
                         <p onClick={()=>{props.history.push('/projects/movies')}}><h1>Movies</h1></p>
                     </div>
-                    <div className="work_img">
+                    <div className="work_img" onClick={()=>{alert('작업 중입니다.')}}>
                         <p><h1>Calender</h1></p>
                     </div>
                 </div>
