@@ -685,7 +685,6 @@ main {
     position: relative;
     width: 250px;
     height: 60px;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -699,6 +698,7 @@ main {
     border: none;
     outline: none;
     font-size: 18px;
+    text-align: center;
 }
 .clear {
     position: absolute;
