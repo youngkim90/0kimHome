@@ -52,7 +52,7 @@ function MovieComment(props) {
         }
         if (confirm("감사합니다. 리뷰 점수 잊지 않으셨죠? 소중한 리뷰가 전달됩니다.")) {
             const res = Axios({
-                    url:'http://localhost:5000/api/projects/moviereview',
+                    url:'http://3.36.163.193:5000/api/projects/moviereview',
                     method: 'post',
                     data: {
                         id: props.movieId,

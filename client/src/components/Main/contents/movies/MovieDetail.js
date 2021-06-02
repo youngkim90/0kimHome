@@ -11,7 +11,7 @@ function MovieDetail(props) {
     let reviewScore = 0;
     if(title){
         useEffect( ()=>{
-            const res = Axios.get('http://localhost:5000/api/projects/movielist/'+title)
+            const res = Axios.get('http://3.36.163.193:5000/api/projects/movielist/'+title)
                 .then(response => {
                     if (response) {
                         let data = Object.assign(response.data[0]);

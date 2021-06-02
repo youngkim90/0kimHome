@@ -8,7 +8,9 @@ module.exports = {                                      // moduel export (옛날
         filename: 'index.bundle.js'
     },
     devServer: {
-        port: 3010,
+		disableHostCheck: true,
+		host: '0.0.0.0',
+        port: 80,
         watchContentBase: true,
         historyApiFallback: true,
         open: true

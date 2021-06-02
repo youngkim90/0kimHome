@@ -7,7 +7,7 @@ function CommentView(props) {
 
     useEffect(() => {
         if (props.movieId) {
-            const res = Axios.get('http://localhost:5000/api/projects/reviewlist/' + props.movieId)
+            const res = Axios.get('http://3.36.163.193:5000/api/projects/reviewlist/' + props.movieId)
                 .then(response => {
                     if (response.data) {
                         const data = Object.assign(response.data);
