@@ -22,4 +22,12 @@
 |Client Server Rendering|<img src="https://user-images.githubusercontent.com/47030781/120444122-4abe7680-c3c2-11eb-83d0-df897df54d89.png" width="750" height="350">| - **`비동기`** 방식의 CSR<br><br> - 리액트 **`함수형 컴포넌트`** 방식으로 화면 관리<br><br> - 리액트 `State, Props`를 활용한 상태관리<br><br> - `react-router-dom`과 `props.history` 기능을 활용한 페이지 이동|
 |REST|<img src="https://user-images.githubusercontent.com/47030781/120446112-3a0f0000-c3c4-11eb-9cea-61c196257f38.png" width="700">|- 서버에 요청하는 Http method로 `Axios`라이브러리를 활용<br><br> - 영화의 id와 title을 파라미터로 활용하여 `Restful`하게 요청 <br><br> - 댓글 `생성(Post)`, `읽기(Get)` 기능을 추가<br><br> - 댓글 수정(Put), 삭제(Delete) 추가 예정|
 |Server|<img src="https://user-images.githubusercontent.com/47030781/120447754-dede0d00-c3c5-11eb-8b79-86e89b7f48f1.png" width="600">|- 서버 Query 언어로 **`Mysql`** 활용<br><br> - `Express`의 Router 미들웨어를 활용하여 요청을 분리<br><br> - 서버에서 데이터 응답에 필요한 `body-parser, cors` 등의 js 미들웨어를 활용|
-|Etc|||
+|Etc||- **`Webpack`** 을 활용한 소스 bundle<br><br> - `babel, css` Loader를 활용하여 ES5 적용|
+<br><br>
+
+## To-Be
+- 회원가입 기능 및 Passport, JsonWebToken, Session
+- 댓글 수정, 삭제 기능
+- 이미지, 줄거리 업로드 기능
+- Calendar 프로젝트 생성
+- Dashboard 프로젝트 기능추가
