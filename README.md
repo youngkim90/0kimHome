@@ -27,7 +27,7 @@
 
 ## To-Be
 - 회원가입 기능 및 Passport, JsonWebToken, Session
-- 댓글 수정, 삭제 기능
-- 이미지, 줄거리 업로드 기능
+- Email 전송 기능
+- 게시물 업로드 및 댓글 수정, 삭제 기능
 - Calendar 프로젝트 생성
 - Dashboard 프로젝트 기능추가
