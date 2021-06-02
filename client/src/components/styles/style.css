@@ -1005,4 +1005,7 @@ main {
     .movie_Thumb {
         width: 60%;
     }
+    .Movielist {
+        width: 85vw;
+    }
 }
