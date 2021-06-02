@@ -13,6 +13,7 @@
 ## 사용된 기술 스택
 - **Html, Css, Javascript, React, Webpack, Babel**
 - **NodeJS, Express, Mysql**
+- **AWS(EC2)**
 <br><br>
 
 ## 특징
