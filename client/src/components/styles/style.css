@@ -738,7 +738,7 @@ main {
     min-height: 50vh;
     height: 100%;
     margin-top: 5%;
-    width: 70vw;
+    width: 85vw;
     box-shadow: 0 4px 25px var(--box-shadow-color);
     border-radius: .5rem;
 }
@@ -943,7 +943,7 @@ main {
 @media screen and (max-width: 1024px){
     .MovieDetail {
         flex-direction: column;
-        width: 70vw;
+        width: 95vw;
         height: auto;
         margin-bottom: 5%;
     }
