@@ -1003,6 +1003,6 @@ main {
 }
 @media screen and (max-width: 480px) {
     .movie_Thumb {
-        width: 40%;
+        width: 50%;
     }
 }
