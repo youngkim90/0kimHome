@@ -87,9 +87,9 @@ function MainDetail(props) {
                     </div>
 
                     <div>
-                        <div className="work_img" onClick={()=>{alert('작업 중입니다.')}} />
-                        </div>
+                        <i className="fas fa-laptop-code skills_img"></i>
                     </div>
+				</div>
             </section>
 
             {/* Project */}
