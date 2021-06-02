@@ -62,8 +62,8 @@ function MainDetail(props) {
                     <div>
                         <h2 className="about_subtitle">2년차 개발자 김영완입니다.</h2>
                         <p className="about_text">Frontend와 Backend에서 웹을 개발하고 2년차 주니어 개발자입니다.
-                                주로 사용한 프로그래밍 언어는 Java와 Javascript 입니다. <br/>여러 개의 프로젝트를 경험하면서 데이터 시각화가 가져다주는
-                                유용함을 알게되었고, 더 정확하고 편리하게 데이터를 다룰 수 있는 데이터 전문가가 되어야겠다는 목표를 갖게 되었습니다.</p>
+                            주로 사용한 프로그래밍 언어는 Java와 Javascript 입니다. <br/>여러 개의 프로젝트를 경험하면서 데이터 시각화가 가져다주는
+                            유용함을 알게되었고, 더 정확하고 편리하게 데이터를 다룰 수 있는 데이터 전문가가 되어야겠다는 목표를 갖게 되었습니다.</p>
                     </div>
                 </div>
             </section>
@@ -87,9 +87,9 @@ function MainDetail(props) {
                     </div>
 
                     <div>
-                        <i className="fas fa-laptop-code skills_img"></i>
+                        <div className="work_img" onClick={()=>{alert('작업 중입니다.')}} />
+                        </div>
                     </div>
-                </div>
             </section>
 
             {/* Project */}
@@ -121,12 +121,12 @@ function MainDetail(props) {
                         <input type="text" placeholder="Name" className="contact_input"/>
                         <input type="mail" placeholder="Email" className="contact_input"/>
                         <textarea name="" id="" cols="0" rows="10" className="contact_input"></textarea>
-                        <input type="button" value="Contact" className="contact_button button"/>
+                        <input type="button" value="Contact" className="contact_button button" onClick={()=>{alert('작업 중입니다.')}} />
                     </form>
                 </div>
             </section>
         </>
-    );
+);
 }
 
 export default withRouter(MainDetail);
