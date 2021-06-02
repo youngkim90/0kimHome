@@ -648,7 +648,7 @@ main {
     box-shadow: 0 0 0 5px var(--first-color);
 }
 .movie_Search.active{
-    width: 360px;
+    width: 250px;
 }
 .movie_Search .search_Icon {
     position: absolute;
@@ -683,9 +683,9 @@ main {
 }
 .movie_Search .search_Input {
     position: relative;
-    width: 300px;
+    width: 250px;
     height: 60px;
-    left: 60px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
