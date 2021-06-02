@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Axios from "axios";
+import {USER_SERVER} from '../../../../config'
 
 function CommentView(props) {
 
@@ -7,7 +8,7 @@ function CommentView(props) {
 
     useEffect(() => {
         if (props.movieId) {
-            const res = Axios.get('http://3.36.163.193:5000/api/projects/reviewlist/' + props.movieId)
+            const res = Axios.get(USER_SERVER+'api/projects/reviewlist/' + props.movieId)
                 .then(response => {
                     if (response.data) {
                         const data = Object.assign(response.data);

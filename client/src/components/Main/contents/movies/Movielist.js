@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Axios from 'axios';
 import MovieInfo from './MovieInfo';
 import MovieSearch from "./MovieSearch";
+import {USER_SERVER} from "../../../../config"
 
 function Movielist(props) {
 
@@ -10,7 +11,7 @@ function Movielist(props) {
     const [movie, setMovie] = useState([]);
     useEffect(() =>{
 
-        const res = Axios.get('http://3.36.163.193:5000/api/projects/movielist/*')
+        const res = Axios.get(USER_SERVER+'api/projects/movielist/*')
             .then(response => {
 
                 if(response.data){
@@ -37,7 +38,7 @@ function Movielist(props) {
     },[]);
 
     const searchMovie = (value) =>{
-        const res = Axios.get('http://3.36.163.193:5000/api/projects/movielist/'+value)
+        const res = Axios.get(USER_SERVER+'api/projects/movielist/'+value)
             .then(response => {
                 if(response.data) {
                     const data = Object.assign(response.data);

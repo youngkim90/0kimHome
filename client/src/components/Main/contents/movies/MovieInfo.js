@@ -1,5 +1,6 @@
 import React ,{useState, useEffect}from 'react';
 import { withRouter } from 'react-router-dom';
+import { IMAGE_BASE_URL } from '../../../../config';
 
 function MovieInfo(props) {
     const [reviewScore, setReviewSocre] = useState(0);
@@ -20,7 +21,7 @@ function MovieInfo(props) {
     return (
         <div className={"MovieInfo"} id={movie}>
             <div className={"movie_Thumb"}>
-                {props.thumb && <img className={"movie_img"} src={"../src/components/images/movies/thumbnail/"+props.thumb} onClick={()=>{props.history.push('/projects/movieDetail/'+props.title)}} />}
+                {props.thumb && <img className={"movie_img"} src={IMAGE_BASE_URL+"movies/thumbnail/"+props.thumb} onClick={()=>{props.history.push('/projects/movieDetail/'+props.title)}} />}
             </div>
             <div className="movie_Content">
                 <div className={"movie_Title"}>
