@@ -2,11 +2,13 @@ import React ,{useState, useEffect}from 'react';
 import { withRouter } from 'react-router-dom';
 import { IMAGE_BASE_URL } from '../../../../config';
 
+//영화의 간단한 정보 표시
 function MovieInfo(props) {
     const [reviewScore, setReviewSocre] = useState(0);
     const movie = 'movie_'+props.id
 
     useEffect(()=>{
+        //영화 평점에 대한 정보를 props로 받아와 State로 관리
         if(props.average){
             const score = (props.average*2).toFixed(0);
             const chkReview = document.querySelectorAll("i[name=review_" + props.title + "]");

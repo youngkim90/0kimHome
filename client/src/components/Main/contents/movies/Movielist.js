@@ -15,6 +15,7 @@ function Movielist(props) {
                 if(response.data){
                     const data = Object.assign(response.data);
                     let movieArr = [];
+                    //필요한 영화정보 필터링
                     for(const movieInfo of data){
                         const movieData = {};
                         movieData.id = movieInfo.id;
@@ -22,12 +23,14 @@ function Movielist(props) {
                         if(movieInfo.thumbnail){
                             movieData.thumbnail = movieInfo.thumbnail;
                         }
+                        //영화 평점 계산
                         if(movieInfo.totalScore && movieInfo.reviewer){
                             const aver = (Number(movieInfo.totalScore)/Number(movieInfo.reviewer)).toFixed(1);
                             movieData.average = aver;
                         }
                         movieArr.push(movieData);
                     }
+                    //필터링 된 영화정보를 State에 저장하고 Rendering
                     setMovie(movieArr);
                 }
             }). catch(err => {

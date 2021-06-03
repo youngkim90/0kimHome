@@ -5,6 +5,7 @@ import { USER_SERVER } from '../../../../config'
 import MovieComment from "./MovieComment";
 import { withRouter } from 'react-router-dom';
 
+//영화 상세화면을 호출
 function MovieDetail(props) {
     //props.history
     const path = props.location.pathname;
