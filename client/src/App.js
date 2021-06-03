@@ -11,7 +11,9 @@ function App() {
   return (
       <div className="App">
         <Router>
+          {/* Header 고정 */}
           <Header />
+          {/* Main Contents */}
           <Switch>
             <Route exact path="/" component={Main} />
             <Route path="/projects/:content" component={Main} />

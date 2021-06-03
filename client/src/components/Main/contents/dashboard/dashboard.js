@@ -49,6 +49,7 @@ function dashboard(props) {
 
         // Dashboard 두번째 영역에 보여줄 data를 필터링한다.
         const secondContents = (krData, jpData, thaiData) => {
+                //3개월 간격의 코로나 데이터를 호출
                 const krMonthlyData = getMonthlyData(krData);
                 const jpMonthlyData = getMonthlyData(jpData);
                 const thaiMonthlyData = getMonthlyData(thaiData);
@@ -58,6 +59,7 @@ function dashboard(props) {
 
                 //필터링된 데이터를 배열로 묶어준다.
                 const totalData = [...[krMonthlyData], ...[jpMonthlyData], ...[thaiMonthlyData]];
+
                 //html 요소를 생성한다.
                 const mainChart = document.createElement("div");
                 mainChart.setAttribute('id','mainChart');

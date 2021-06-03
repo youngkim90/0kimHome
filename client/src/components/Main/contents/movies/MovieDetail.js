@@ -6,11 +6,16 @@ import MovieComment from "./MovieComment";
 import { withRouter } from 'react-router-dom';
 
 function MovieDetail(props) {
-    const [MovieDetail, setMovieDetail] = useState({});
-    const [score, setScore] = useState(0);
+    //props.history
     const path = props.location.pathname;
     const title = path.substring(path.lastIndexOf("/")+1, path.length);
+
+    //State 관리
+    const [MovieDetail, setMovieDetail] = useState({});
+    const [score, setScore] = useState(0);
+
     if(title){
+        //영화 상세정보 State에 저장
         useEffect( ()=>{
             const res = Axios.get(USER_SERVER+'api/projects/movielist/'+title)
                 .then(response => {
@@ -22,13 +27,17 @@ function MovieDetail(props) {
                     throw err;
                 })
         },[])
+
+        //영화 정보가 State에 저장된 후 평점 State 저장
         useEffect( ()=> {
             const score = ((MovieDetail.totalScore/MovieDetail.reviewer)*2).toFixed(0);
             const chkReview = document.querySelectorAll("i[name=review_" + MovieDetail.title + "]");
+            //평점을 별 모양으로 표시
             for (let i = chkReview.length - 1; i >= (chkReview.length - score); i--) {
                 chkReview[i].classList.add('review_active');
             }
             if(MovieDetail.totalScore > 0){
+                //평점 상태 저장
                 setScore((MovieDetail.totalScore/MovieDetail.reviewer).toFixed(1));
             }
         },[MovieDetail]);
