@@ -7,6 +7,7 @@ import { withRouter } from 'react-router-dom';
 
 //영화 상세화면을 호출
 function MovieDetail(props) {
+    window.scrollTo(0,0);
     //props.history
     const path = props.location.pathname;
     const title = path.substring(path.lastIndexOf("/")+1, path.length);
