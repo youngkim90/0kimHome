@@ -6,6 +6,7 @@ import {USER_SERVER} from "../../../../config"
 
 //영화 전체 리스트 호출
 function Movielist(props) {
+    window.scrollTo(0,0);
     const [movie, setMovie] = useState([]);
     useEffect(() =>{
 
