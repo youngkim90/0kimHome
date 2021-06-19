@@ -82,7 +82,7 @@ function MainDetail(props) {
                         <SkillDetail name="fab fa-js-square" title="JAVASCRIPT" skill="skills_js" per="70%"/>
                         <SkillDetail name="fab fa-react" title="REACT" skill="skills_ra" per="50%"/>
                         <SkillDetail name="fab fa-java" title="JAVA" skill="skills_jv" per="75%"/>
-                        <SkillDetail name="fas fa-seedling" title="SPRING" skill="skills_sp" per="50%"/>
+                        <SkillDetail name="fas fa-seedling" title="SPRING(springboot)" skill="skills_sp" per="60%"/>
                         <SkillDetail name="fab fa-node-js" title="NodeJS" skill="skills_nd" per="50%"/>
                         <SkillDetail name="fas fa-database" title="Mysql/Oracle" skill="skills_db" per="40%"/>
                     </div>
