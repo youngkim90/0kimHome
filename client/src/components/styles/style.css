@@ -343,6 +343,9 @@ ul{
 .skills_jv{
     width: 75%;
 }
+.skills_dk{
+    width: 50%;
+}
 .skills_img{
     font-size: 250px;
     color: var(--third-color);
