@@ -61,10 +61,13 @@ function MainDetail(props) {
                         <i className="far fa-id-card"></i>
                     </div>
                     <div>
-                        <h2 className="about_subtitle">2년차 개발자 김영완입니다.</h2>
-                        <p className="about_text">웹을 개발하고 2년차 주니어 개발자입니다.
-                                주로 사용한 프로그래밍 언어는 Java와 Javascript 입니다. <br/>여러 개의 프로젝트를 경험하면서 데이터 시각화가 가져다주는
-                                유용함을 알게되었고, 더 정확하고 편리하게 데이터를 다룰 수 있는 데이터 전문가가 되어야겠다는 목표를 갖게 되었습니다.</p>
+                        <h2 className="about_subtitle">주니어 개발자 김영완입니다.</h2>
+                        <p className="about_text">안녕하세요. 2년차 웹 개발자입니다.
+                            주로 사용하는 프로그래밍 언어는 Java와 Javascript 입니다. <br/>
+                            작게는 데이터 시각화 및 효율적인 데이터 파이프라인을 구축하고<br/>
+                            크게는 인류의 삶을 편리하게 바꾸어 나가는 서비스를 만드는 것을 목표로 하는 개발자입니다.<br/>
+
+                        </p>
                     </div>
                 </div>
             </section>
