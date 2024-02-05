@@ -7,7 +7,7 @@
 <br><br> 
 
 ## 사이트 주소
-- [http://0kim-home.com/](http://0kim-home.com/)
+- [http://0kim-home.com/](비활성화)
 <br><br>
 
 ## 사용된 기술 스택
